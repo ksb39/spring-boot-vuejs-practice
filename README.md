@@ -13,7 +13,7 @@ https://github.com/zeit/next.js/tree/canary/examples/custom-server-koa
 https://github.com/steemit/condenser
 
 
-
+https://startbootstrap.com/template-overviews/blog-post/
 
 
 
