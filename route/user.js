@@ -77,15 +77,15 @@ api.delete('/user/:id', async (ctx, next) => {
     ctx.status = 204; // No Content
 });
 
-api.update('/user/:id', async (ctx, next) => {
+api.patch('/user/:id', async (ctx, next) => {
     const { id } = ctx.params
 
     let user;
 
     try {
-        user = await User.findByIdAndUpdate(id, ctx.request.body, {
-            new: true
-        });
+        // user = await User.findByIdAndUpdate(id, ctx.request.body, {
+        //     new: true
+        // });
     } catch (e) {
         return ctx.throw(500, e);
     }

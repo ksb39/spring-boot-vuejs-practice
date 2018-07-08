@@ -4,6 +4,7 @@ const Router = require('koa-router')
 const {join} = require('path')
 const api = require('./route/api.js');
 const userApi = require('./route/user.js');
+const postApi = require('./route/post.js');
 const dbConfig = require('./db/config.js');
 const dbSetup = require('./db/setup.js');
 
@@ -33,6 +34,7 @@ app.prepare()
 
         router.use('/api', api.routes());
         router.use('/user', userApi.routes());
+        router.use('/post', postApi.routes());
 
         router.get('*', async ctx => {
             await handle(ctx.req, ctx.res)
