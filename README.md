@@ -13,3 +13,15 @@ https://github.com/boylegu/SpringBoot-vue
 https://cloud.spring.io/spring-cloud-gateway/
 
 
+####################################################################################
+
+
+mvn frontend:install-node-and-npm -DnodeVersion=v8.11.3 -DnpmVersion=5.6.0
+
+
+mvn frontend:npm
+
+
+
+
+
