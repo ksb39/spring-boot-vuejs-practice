@@ -22,6 +22,9 @@ mvn frontend:install-node-and-npm -DnodeVersion=v8.11.3 -DnpmVersion=5.6.0
 mvn frontend:npm
 
 
+npm run serve
 
+
+####################################################################################
 
 
